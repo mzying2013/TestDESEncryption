@@ -67,6 +67,7 @@ static NSString * const releaseUserDefaultKey = @"releaseUserDefaultKey";
     
     
     
+    
     if (self.encodeLabel.text && self.releaseEncodeLabel.text) {
         if ([self.encodeLabel.text isEqualToString:self.releaseEncodeLabel.text]) {
             self.view.backgroundColor = [UIColor greenColor];
