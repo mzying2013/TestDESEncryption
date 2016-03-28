@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-wj-zPl">
+                                <rect key="frame" x="168" y="20" width="265" height="50"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hfi-L2-2w4"/>
+                                    <constraint firstAttribute="width" constant="265" id="MGi-da-9pJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCk-6i-2ek">
+                                <rect key="frame" x="168" y="78" width="265" height="50"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="X4w-et-2eA"/>
+                                    <constraint firstAttribute="width" constant="265" id="YGP-Kw-705"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSN-Zp-8z4">
+                                <rect key="frame" x="168" y="158" width="265" height="50"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="Ii7-xg-58c"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZRI-LV-d9h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6q4-Hs-1OU">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="jei-SO-T2T"/>
+                                    <constraint firstAttribute="height" constant="30" id="sMv-fh-hYV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="clear"/>
+                                <connections>
+                                    <action selector="clearBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbD-b6-zEA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6q4-Hs-1OU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ot-Yc-vEH"/>
+                            <constraint firstItem="ohf-wj-zPl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F8e-cL-5h8"/>
+                            <constraint firstItem="XCk-6i-2ek" firstAttribute="trailing" secondItem="ohf-wj-zPl" secondAttribute="trailing" id="Iua-S9-gDo"/>
+                            <constraint firstItem="ohf-wj-zPl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KV0-Bd-hLz"/>
+                            <constraint firstItem="zSN-Zp-8z4" firstAttribute="centerX" secondItem="XCk-6i-2ek" secondAttribute="centerX" id="P52-ch-EVT"/>
+                            <constraint firstItem="XCk-6i-2ek" firstAttribute="width" secondItem="ohf-wj-zPl" secondAttribute="width" id="U3f-kF-9J5"/>
+                            <constraint firstItem="6q4-Hs-1OU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="be3-5c-5Wd"/>
+                            <constraint firstItem="XCk-6i-2ek" firstAttribute="top" secondItem="ohf-wj-zPl" secondAttribute="bottom" constant="8" id="h1C-GB-yPI"/>
+                            <constraint firstItem="XCk-6i-2ek" firstAttribute="height" secondItem="ohf-wj-zPl" secondAttribute="height" id="nHB-m3-ZnM"/>
+                            <constraint firstItem="zSN-Zp-8z4" firstAttribute="top" secondItem="XCk-6i-2ek" secondAttribute="bottom" constant="30" id="rpk-8V-e11"/>
+                            <constraint firstItem="XCk-6i-2ek" firstAttribute="leading" secondItem="ohf-wj-zPl" secondAttribute="leading" id="zJe-yt-OrQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="encodeLabel" destination="XCk-6i-2ek" id="7UD-Q2-yjR"/>
+                        <outlet property="originalLabel" destination="ohf-wj-zPl" id="McG-hS-12y"/>
+                        <outlet property="releaseEncodeLabel" destination="zSN-Zp-8z4" id="Per-eu-VG0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="287"/>
+        </scene>
+    </scenes>
+</document>

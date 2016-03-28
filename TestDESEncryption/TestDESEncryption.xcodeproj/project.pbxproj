@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C93811C1CA973A400DC522E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C93811B1CA973A400DC522E /* main.m */; };
+		0C93811F1CA973A400DC522E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C93811E1CA973A400DC522E /* AppDelegate.m */; };
+		0C9381221CA973A400DC522E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9381211CA973A400DC522E /* ViewController.m */; };
+		0C9381251CA973A400DC522E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9381231CA973A400DC522E /* Main.storyboard */; };
+		0C9381271CA973A400DC522E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9381261CA973A400DC522E /* Assets.xcassets */; };
+		0C93812A1CA973A400DC522E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9381281CA973A400DC522E /* LaunchScreen.storyboard */; };
+		0C9381331CA9774500DC522E /* FSUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9381321CA9774500DC522E /* FSUserDefaults.m */; };
+		0C93813B1CA9777800DC522E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9381361CA9777800DC522E /* NSData+Base64.m */; };
+		0C93813C1CA9777800DC522E /* NSData+Crypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9381381CA9777800DC522E /* NSData+Crypt.m */; };
+		0C93813D1CA9777800DC522E /* NSString+Crypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C93813A1CA9777800DC522E /* NSString+Crypt.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C9381171CA973A400DC522E /* TestDESEncryption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDESEncryption.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C93811B1CA973A400DC522E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C93811D1CA973A400DC522E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C93811E1CA973A400DC522E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C9381201CA973A400DC522E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C9381211CA973A400DC522E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C9381241CA973A400DC522E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C9381261CA973A400DC522E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C9381291CA973A400DC522E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C93812B1CA973A400DC522E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C9381311CA9774500DC522E /* FSUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSUserDefaults.h; sourceTree = "<group>"; };
+		0C9381321CA9774500DC522E /* FSUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSUserDefaults.m; sourceTree = "<group>"; };
+		0C9381351CA9777800DC522E /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		0C9381361CA9777800DC522E /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		0C9381371CA9777800DC522E /* NSData+Crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Crypt.h"; sourceTree = "<group>"; };
+		0C9381381CA9777800DC522E /* NSData+Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Crypt.m"; sourceTree = "<group>"; };
+		0C9381391CA9777800DC522E /* NSString+Crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Crypt.h"; sourceTree = "<group>"; };
+		0C93813A1CA9777800DC522E /* NSString+Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Crypt.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C9381141CA973A400DC522E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C93810E1CA973A400DC522E = {
+			isa = PBXGroup;
+			children = (
+				0C9381191CA973A400DC522E /* TestDESEncryption */,
+				0C9381181CA973A400DC522E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C9381181CA973A400DC522E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C9381171CA973A400DC522E /* TestDESEncryption.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C9381191CA973A400DC522E /* TestDESEncryption */ = {
+			isa = PBXGroup;
+			children = (
+				0C9381341CA9777800DC522E /* FSCrypt */,
+				0C9381311CA9774500DC522E /* FSUserDefaults.h */,
+				0C9381321CA9774500DC522E /* FSUserDefaults.m */,
+				0C93811D1CA973A400DC522E /* AppDelegate.h */,
+				0C93811E1CA973A400DC522E /* AppDelegate.m */,
+				0C9381201CA973A400DC522E /* ViewController.h */,
+				0C9381211CA973A400DC522E /* ViewController.m */,
+				0C9381231CA973A400DC522E /* Main.storyboard */,
+				0C9381261CA973A400DC522E /* Assets.xcassets */,
+				0C9381281CA973A400DC522E /* LaunchScreen.storyboard */,
+				0C93812B1CA973A400DC522E /* Info.plist */,
+				0C93811A1CA973A400DC522E /* Supporting Files */,
+			);
+			path = TestDESEncryption;
+			sourceTree = "<group>";
+		};
+		0C93811A1CA973A400DC522E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C93811B1CA973A400DC522E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C9381341CA9777800DC522E /* FSCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				0C9381351CA9777800DC522E /* NSData+Base64.h */,
+				0C9381361CA9777800DC522E /* NSData+Base64.m */,
+				0C9381371CA9777800DC522E /* NSData+Crypt.h */,
+				0C9381381CA9777800DC522E /* NSData+Crypt.m */,
+				0C9381391CA9777800DC522E /* NSString+Crypt.h */,
+				0C93813A1CA9777800DC522E /* NSString+Crypt.m */,
+			);
+			path = FSCrypt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C9381161CA973A400DC522E /* TestDESEncryption */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C93812E1CA973A400DC522E /* Build configuration list for PBXNativeTarget "TestDESEncryption" */;
+			buildPhases = (
+				0C9381131CA973A400DC522E /* Sources */,
+				0C9381141CA973A400DC522E /* Frameworks */,
+				0C9381151CA973A400DC522E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestDESEncryption;
+			productName = TestDESEncryption;
+			productReference = 0C9381171CA973A400DC522E /* TestDESEncryption.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C93810F1CA973A400DC522E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = heshidai;
+				TargetAttributes = {
+					0C9381161CA973A400DC522E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 0C9381121CA973A400DC522E /* Build configuration list for PBXProject "TestDESEncryption" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C93810E1CA973A400DC522E;
+			productRefGroup = 0C9381181CA973A400DC522E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C9381161CA973A400DC522E /* TestDESEncryption */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C9381151CA973A400DC522E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C93812A1CA973A400DC522E /* LaunchScreen.storyboard in Resources */,
+				0C9381271CA973A400DC522E /* Assets.xcassets in Resources */,
+				0C9381251CA973A400DC522E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C9381131CA973A400DC522E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9381221CA973A400DC522E /* ViewController.m in Sources */,
+				0C93811F1CA973A400DC522E /* AppDelegate.m in Sources */,
+				0C93813B1CA9777800DC522E /* NSData+Base64.m in Sources */,
+				0C93813D1CA9777800DC522E /* NSString+Crypt.m in Sources */,
+				0C93813C1CA9777800DC522E /* NSData+Crypt.m in Sources */,
+				0C93811C1CA973A400DC522E /* main.m in Sources */,
+				0C9381331CA9774500DC522E /* FSUserDefaults.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0C9381231CA973A400DC522E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C9381241CA973A400DC522E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C9381281CA973A400DC522E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C9381291CA973A400DC522E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C93812C1CA973A400DC522E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0C93812D1CA973A400DC522E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C93812F1CA973A400DC522E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestDESEncryption/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HSD.TestDESEncryption;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C9381301CA973A400DC522E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestDESEncryption/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HSD.TestDESEncryption;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C9381121CA973A400DC522E /* Build configuration list for PBXProject "TestDESEncryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C93812C1CA973A400DC522E /* Debug */,
+				0C93812D1CA973A400DC522E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C93812E1CA973A400DC522E /* Build configuration list for PBXNativeTarget "TestDESEncryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C93812F1CA973A400DC522E /* Debug */,
+				0C9381301CA973A400DC522E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C93810F1CA973A400DC522E /* Project object */;
+}
