@@ -128,6 +128,19 @@
 //    else if (ccStatus == kCCDecodeError) DDLogError( @"DECODE ERROR");
 //    else if (ccStatus == kCCUnimplemented) DDLogError( @"UNIMPLEMENTED");
     NSData *data = nil;
+    
+    if (operation == kCCEncrypt) {
+        NSLog(@"operation:%d",operation);
+        //    NSLog(@"key:%@",vkey);
+        NSLog(@"iv:%d",vinitVec);
+        NSLog(@"vplainText:%d",vplainText);
+        NSLog(@"plainTextBufferSize:%zu",plainTextBufferSize);
+        NSLog(@"bufferPtr:%s",bufferPtr);
+        NSLog(@"size:%zu",bufferPtrSize);
+        NSLog(@"Bytes:%d",&movedBytes);
+    }
+    
+    
     if (ccStatus==kCCSuccess) {
         data = [NSData dataWithBytes:(const void *)bufferPtr length:(NSUInteger)movedBytes];
     }

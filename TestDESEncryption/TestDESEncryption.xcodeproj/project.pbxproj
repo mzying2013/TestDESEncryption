@@ -17,6 +17,9 @@
 		0C93813B1CA9777800DC522E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9381361CA9777800DC522E /* NSData+Base64.m */; };
 		0C93813C1CA9777800DC522E /* NSData+Crypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9381381CA9777800DC522E /* NSData+Crypt.m */; };
 		0C93813D1CA9777800DC522E /* NSString+Crypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C93813A1CA9777800DC522E /* NSString+Crypt.m */; };
+		0CF049561CC66852007DEB84 /* DES3Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF049531CC66852007DEB84 /* DES3Util.m */; };
+		0CF049571CC66852007DEB84 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF049551CC66852007DEB84 /* GTMBase64.m */; };
+		0CF0495B1CC66A74007DEB84 /* NSString+NSReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF0495A1CC66A74007DEB84 /* NSString+NSReplace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,13 @@
 		0C9381381CA9777800DC522E /* NSData+Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Crypt.m"; sourceTree = "<group>"; };
 		0C9381391CA9777800DC522E /* NSString+Crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Crypt.h"; sourceTree = "<group>"; };
 		0C93813A1CA9777800DC522E /* NSString+Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Crypt.m"; sourceTree = "<group>"; };
+		0CF049521CC66852007DEB84 /* DES3Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DES3Util.h; sourceTree = "<group>"; };
+		0CF049531CC66852007DEB84 /* DES3Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DES3Util.m; sourceTree = "<group>"; };
+		0CF049541CC66852007DEB84 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		0CF049551CC66852007DEB84 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		0CF049581CC66A52007DEB84 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		0CF049591CC66A74007DEB84 /* NSString+NSReplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSReplace.h"; sourceTree = "<group>"; };
+		0CF0495A1CC66A74007DEB84 /* NSString+NSReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSReplace.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,13 @@
 		0C9381341CA9777800DC522E /* FSCrypt */ = {
 			isa = PBXGroup;
 			children = (
+				0CF049591CC66A74007DEB84 /* NSString+NSReplace.h */,
+				0CF0495A1CC66A74007DEB84 /* NSString+NSReplace.m */,
+				0CF049581CC66A52007DEB84 /* GTMDefines.h */,
+				0CF049521CC66852007DEB84 /* DES3Util.h */,
+				0CF049531CC66852007DEB84 /* DES3Util.m */,
+				0CF049541CC66852007DEB84 /* GTMBase64.h */,
+				0CF049551CC66852007DEB84 /* GTMBase64.m */,
 				0C9381351CA9777800DC522E /* NSData+Base64.h */,
 				0C9381361CA9777800DC522E /* NSData+Base64.m */,
 				0C9381371CA9777800DC522E /* NSData+Crypt.h */,
@@ -179,10 +196,13 @@
 			files = (
 				0C9381221CA973A400DC522E /* ViewController.m in Sources */,
 				0C93811F1CA973A400DC522E /* AppDelegate.m in Sources */,
+				0CF049561CC66852007DEB84 /* DES3Util.m in Sources */,
+				0CF0495B1CC66A74007DEB84 /* NSString+NSReplace.m in Sources */,
 				0C93813B1CA9777800DC522E /* NSData+Base64.m in Sources */,
 				0C93813D1CA9777800DC522E /* NSString+Crypt.m in Sources */,
 				0C93813C1CA9777800DC522E /* NSData+Crypt.m in Sources */,
 				0C93811C1CA973A400DC522E /* main.m in Sources */,
+				0CF049571CC66852007DEB84 /* GTMBase64.m in Sources */,
 				0C9381331CA9774500DC522E /* FSUserDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

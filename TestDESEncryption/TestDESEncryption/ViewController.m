@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "FSUserDefaults.h"
 #import "NSString+Crypt.h"
+#import "DES3Util.h"
+
 
 static NSString * const originalText = @"LIUMIN555198";
 static NSString * const encodeKey = @"key12345";
@@ -33,49 +35,26 @@ static NSString * const releaseUserDefaultKey = @"releaseUserDefaultKey";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    self.originalLabel.text = originalText;
-    
+    self.view.backgroundColor = [UIColor orangeColor];
     
     
-//    NSString * encodeStr = [FSUserDefaults userDefaultsObjectForKey:debugUserDefaultKey];
-//    
-//    if (encodeStr) {
-//        self.encodeLabel.text = encodeStr;
-//    }else{
-//        encodeStr = [originalText DESEncryptWithKey:encodeKey iv:nil];
-//        [FSUserDefaults userDefaultsSetObject:encodeStr key:debugUserDefaultKey];
-//        self.encodeLabel.text = encodeStr;
-//    }
-//    
-//    
-//    NSString * releaseEncodeStr = [FSUserDefaults userDefaultsObjectForKey:releaseUserDefaultKey];
-//    if (releaseEncodeStr) {
-//        self.releaseEncodeLabel.text = releaseEncodeStr;
-//    }else{
-//        releaseEncodeStr = [originalText DESEncryptWithKey:encodeKey iv:nil];
-//        [FSUserDefaults userDefaultsSetObject:releaseEncodeStr key:releaseUserDefaultKey];
-//        self.releaseEncodeLabel.text = releaseEncodeStr;
-//    }
+    NSLog(@"FinancialService方法");
+    NSInteger times = 3;
     
-    
-    for (NSInteger index = 0; index < 5; index ++) {
+    for (NSInteger index = 0; index < times; index ++) {
         NSString * encodes = [originalText DESEncryptWithKey:encodeKey iv:nil];
         NSString * decodes = [encodes DESDecryptWithKey:encodeKey iv:nil];
         NSLog(@"%@ -> %@  -> %@",originalText,encodes,decodes);
     }
+
     
-    
-    
-    
-    if (self.encodeLabel.text && self.releaseEncodeLabel.text) {
-        if ([self.encodeLabel.text isEqualToString:self.releaseEncodeLabel.text]) {
-            self.view.backgroundColor = [UIColor greenColor];
-            return;
-        }
+    NSLog(@"\n\n");
+    NSLog(@"GitHud方法");
+    for (NSInteger index = 0; index < times; index ++) {
+        NSString * encodes = [DES3Util encryptUseDES:originalText key:encodeKey];
+        NSString * decodes = [DES3Util decryptUseDES:encodes key:encodeKey];
+        NSLog(@"%@ -> %@  -> %@",originalText,encodes,decodes);
     }
-    
-    self.view.backgroundColor = [UIColor orangeColor];
     
 }
 
