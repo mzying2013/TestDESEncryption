@@ -8,6 +8,7 @@
 
 #import "NSData+Crypt.h"
 
+const Byte constIV[] = {1,2,3,4,5,6,7,8};
 
 @implementation NSData (Crypt)
 
@@ -97,25 +98,26 @@
     size_t bufferPtrSize = 0;
     size_t movedBytes = 0;
     
-//    bufferPtrSize = (plainTextBufferSize + kCCBlockSizeDES) & ~(kCCBlockSizeDES - 1);
-    bufferPtrSize = 1024;
+    bufferPtrSize = (plainTextBufferSize + kCCBlockSizeDES) & ~(kCCBlockSizeDES - 1);
+//    bufferPtrSize = 1024;
     bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
     memset((void *)bufferPtr, 0x0, bufferPtrSize);
     
     const void *vkey = (const void *) [key UTF8String];
-    const void *vinitVec;
+    
+//    Byte vinitVec;
+    const void * constVoidIV;
     if (iv) {
-        vinitVec= (const void *) [iv UTF8String];
+        constVoidIV= (const void *)[iv UTF8String];
     }else{
-        Byte vinitVecT[] =  {1,2,3,4,5,6,7,8};
-        vinitVec = &vinitVecT;
+        constVoidIV =  constIV;
     }
     ccStatus = CCCrypt(operation,
                        kCCAlgorithmDES,
                        kCCOptionPKCS7Padding,
                        vkey,
                        kCCKeySizeDES,
-                       vinitVec,
+                       constVoidIV,
                        vplainText,
                        plainTextBufferSize,
                        (void *)bufferPtr,
@@ -131,14 +133,14 @@
     NSData *data = nil;
     
     if (operation == kCCEncrypt) {
-        NSLog(@"operation:%d",operation);
-        //    NSLog(@"key:%@",vkey);
-        NSLog(@"iv:%d",vinitVec);
-        NSLog(@"vplainText:%d",vplainText);
-        NSLog(@"plainTextBufferSize:%zu",plainTextBufferSize);
-        NSLog(@"bufferPtr:%s",bufferPtr);
-        NSLog(@"size:%zu",bufferPtrSize);
-        NSLog(@"Bytes:%d",&movedBytes);
+//        NSLog(@"operation:%d",operation);
+//        //    NSLog(@"key:%@",vkey);
+//        NSLog(@"iv:%d",constVoidIV);
+//        NSLog(@"vplainText:%d",vplainText);
+//        NSLog(@"plainTextBufferSize:%zu",plainTextBufferSize);
+//        NSLog(@"bufferPtr:%s",bufferPtr);
+//        NSLog(@"size:%zu",bufferPtrSize);
+//        NSLog(@"Bytes:%d",&movedBytes);
     }
     
     

@@ -43,11 +43,8 @@
 
 - (NSString *)DESEncryptWithKey:(NSString *)key iv:(NSString *)iv{
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    NSLog(@"    %@  ",[data description]);
     
     NSData *enData = [data DESEncryptWithKey:key iv:iv];
-    
-    NSLog(@"    %@  ",[enData description]);
     
     NSString *str = [enData base64Encoding];
     return str;

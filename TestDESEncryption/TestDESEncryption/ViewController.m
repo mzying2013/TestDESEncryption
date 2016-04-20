@@ -42,18 +42,22 @@ static NSString * const releaseUserDefaultKey = @"releaseUserDefaultKey";
     NSInteger times = 3;
     
     for (NSInteger index = 0; index < times; index ++) {
-        NSString * encodes = [originalText DESEncryptWithKey:encodeKey iv:nil];
-        NSString * decodes = [encodes DESDecryptWithKey:encodeKey iv:nil];
-        NSLog(@"%@ -> %@  -> %@",originalText,encodes,decodes);
+        NSString * encodes1 = [originalText DESEncryptWithKey:encodeKey iv:nil];
+        NSString * encodes2 = [encodes1 DESEncryptWithKey:encodeKey iv:nil];
+        NSString * decodes1 = [encodes2 DESDecryptWithKey:encodeKey iv:nil];
+        NSString * decodes2 = [decodes1 DESDecryptWithKey:encodeKey iv:nil];
+        NSLog(@"%@ -> %@ -> %@  -> %@ -> %@",originalText,encodes1,encodes2,decodes1,decodes2);
     }
 
     
     NSLog(@"\n\n");
     NSLog(@"GitHud方法");
     for (NSInteger index = 0; index < times; index ++) {
-        NSString * encodes = [DES3Util encryptUseDES:originalText key:encodeKey];
-        NSString * decodes = [DES3Util decryptUseDES:encodes key:encodeKey];
-        NSLog(@"%@ -> %@  -> %@",originalText,encodes,decodes);
+        NSString * encodes1 = [DES3Util encryptUseDES:originalText key:encodeKey];
+        NSString * encodes2 = [DES3Util encryptUseDES:encodes1 key:encodeKey];
+        NSString * decodes1 = [DES3Util decryptUseDES:encodes2 key:encodeKey];
+        NSString * decodes2 = [DES3Util decryptUseDES:decodes1 key:encodeKey];
+        NSLog(@"%@ -> %@ -> %@ -> %@ -> %@",originalText,encodes1,encodes2,decodes1,decodes2);
     }
     
 }

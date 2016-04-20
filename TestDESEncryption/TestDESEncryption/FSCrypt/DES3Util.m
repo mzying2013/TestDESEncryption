@@ -37,12 +37,12 @@ const Byte iv[] = {1,2,3,4,5,6,7,8};
     
 //    NSLog(@"operation:%d",operation);
     //    NSLog(@"key:%@",vkey);
-    NSLog(@"iv:%s",iv);
-    NSLog(@"vplainText:%d",[textData bytes]);
-    NSLog(@"plainTextBufferSize:%zu",(unsigned long)dataLength);
-    NSLog(@"bufferPtr:%s",buffer);
-    NSLog(@"size:%d",1024);
-    NSLog(@"Bytes:%d",&numBytesEncrypted);
+//    NSLog(@"iv:%d",iv);
+//    NSLog(@"vplainText:%d",[textData bytes]);
+//    NSLog(@"plainTextBufferSize:%zu",(unsigned long)dataLength);
+//    NSLog(@"bufferPtr:%s",buffer);
+//    NSLog(@"size:%d",1024);
+//    NSLog(@"Bytes:%d",&numBytesEncrypted);
     
     
     if (cryptStatus == kCCSuccess) {
